@@ -12,7 +12,8 @@ def port_scanner_simulator(ports):
     return results
 
 if __name__ == "__main__":
-    check = [20,21,22,23,80,137,443,8080] 
+    check = input("input coma separated ports: ")
+    check = [int(port.strip()) for port in check.split(",")]
     scan_resualts = port_scanner_simulator(check)
     for port, status in scan_resualts.items():
         print(f"port {port} is {status}")
