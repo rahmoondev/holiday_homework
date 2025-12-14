@@ -12,8 +12,8 @@ def word_counter(sentance):
             word_count[word] =1
     return word_count
     
+if __name__=="__main__":
+    input=input("enter a sentance: ")
 
-input=input("enter a sentance: ")
-
-counter= word_counter(input)
-print(counter)
+    counter= word_counter(input)
+    print(counter)

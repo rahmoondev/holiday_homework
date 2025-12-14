@@ -16,4 +16,6 @@ def new_years_coundown():
     minutes= time_difference.seconds %3600 //60
     print(f"Time left until New Year's Day is: {days} days, {hours} hours, and {minutes} minutes.")
 
-new_years_coundown()
+
+if __name__=="__main__":
+    new_years_coundown()
